@@ -1,0 +1,12 @@
+.dashboard-card img {
+    width: 50px;  /* Reducido de su tamaño original */
+    height: 50px; /* Mantenemos proporción cuadrada */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard-card:hover img {
+    transform: scale(1.05);
+  }

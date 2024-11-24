@@ -1,0 +1,99 @@
+:root {
+  --font-primary: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --color-text-light: #333;
+  --color-background-light: #fff;
+  --color-primary: #646cff;
+  --color-primary-hover: #535bf2;
+  --button-background-dark: #1a1a1a;
+  --button-background-light: #f9f9f9;
+  
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--color-text-light);
+  background-color: var(--color-background-light);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Flamante Roma', sans-serif;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ),
+  url('/public/pronto_copec.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-background-dark);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--color-primary);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: var(--color-background-light);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--button-background-light);
+  }
+}
