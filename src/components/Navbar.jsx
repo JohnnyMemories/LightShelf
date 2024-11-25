@@ -126,24 +126,6 @@ const Navbar = ({ onLoginClick, isLoggedIn, selectedStore, onLogout }) => {
         ) : (
           <>
             <li>
-              <Link 
-                to="/dashboard" 
-                style={styles.linkItem}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.backgroundColor = 'red';
-                  e.currentTarget.style.color = 'white';
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#555';
-                  e.currentTarget.style.transform = 'scale(1)';
-                }}
-              >
-                Acciones
-              </Link>
-            </li>
-            <li>
               <div
                 onClick={handleLogout}
                 style={styles.linkItem}
